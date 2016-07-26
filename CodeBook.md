@@ -41,10 +41,29 @@ The dataset includes the following files:
 
 The following files are available for the train and test data. Their descriptions are equivalent. 
 
+
 •	'train/subject_train.txt': #Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
+
 •	'train/Inertial Signals/total_acc_x_train.txt': #The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis. 
+
 •	'train/Inertial Signals/body_acc_x_train.txt': #The body acceleration signal obtained by subtracting the gravity from the total acceleration. 
+
 •	'train/Inertial Signals/body_gyro_x_train.txt': #The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
 
 
-**R scripts and descriptions for producing a tidy dataset included in README file
+
+Summary of transformations performed on raw data.  Actual step-by-step details and scripts included in README file:
+
+•	Assigned activity names to both test and training datasets
+
+•	Assigning friendly column names to both test and training data sets
+
+•	Adding activity and subject columns to test data and training data respectively
+
+•	Combined records from test data and training data into a single dataset
+
+•	Extracted the mean and standard 
+
+•	Extracting a tidy dataset with the average of each variable by activity and  subject
+
+
